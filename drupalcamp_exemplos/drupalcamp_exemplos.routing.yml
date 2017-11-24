@@ -1,0 +1,23 @@
+
+drupalcamp_exemplos.incorrect_get_controller_hello:
+  path: '/drupalcamp_exemplos/get'
+  defaults:
+    _controller: '\Drupal\drupalcamp_exemplos\Controller\IncorrectGetController::get'
+    _title: 'view'
+  requirements:
+    _permission: 'access content'
+drupalcamp_exemplos.correct_get_controller_hello:
+  path: '/drupalcamp_exemplos/get_correto'
+  defaults:
+    _controller: '\Drupal\drupalcamp_exemplos\Controller\GetController::get'
+    _title: 'view'
+  requirements:
+    _permission: 'access content'
+
+drupalcamp_exemplos.user_info_controller_view:
+  path: '/drupalcamp_exemplos/nome'
+  defaults:
+    _controller: '\Drupal\drupalcamp_exemplos\Controller\UserInfoController::view'
+    _title: 'view'
+  requirements:
+    _permission: 'access content'
